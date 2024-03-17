@@ -1,0 +1,51 @@
+<!-- Modify this script in your head section or include it at the bottom of your HTML file -->
+<script>
+    function addImageToSection(sectionId, imagePath, imageAlt, promptText) {
+        // Create a new article element with the necessary structure
+        var newArticle = document.createElement("article");
+        newArticle.className = "box style2";
+
+        // Create a link element with the image
+        var imageLink = document.createElement("a");
+        imageLink.href = imagePath;
+        imageLink.className = "image featured";
+
+        var imageElement = document.createElement("img");
+        imageElement.src = imagePath;
+        imageElement.alt = imageAlt;
+
+        imageLink.appendChild(imageElement);
+
+        // Create h3 element with a link to the image
+        var headingElement = document.createElement("h3");
+        var headingLink = document.createElement("a");
+        headingLink.href = imagePath;
+        headingLink.textContent = imageAlt;
+        headingElement.appendChild(headingLink);
+
+        // Create a p element for the prompt text
+        var promptElement = document.createElement("p");
+        promptElement.textContent = "Prompt: " + promptText;
+
+        // Append elements to the new article
+        newArticle.appendChild(imageLink);
+        newArticle.appendChild(headingElement);
+        newArticle.appendChild(promptElement);
+
+        // Find the specified section and append the new article
+        var targetSection = document.getElementById(sectionId);
+        targetSection.querySelector(".row").appendChild(newArticle);
+    }
+
+    // Example usage:
+    // Move an image from the main page to the archive
+    addImageToSection("portfolio", "./images/clock_man.jpg", "Clock Man", "create a brand for a steampunk web developer");
+</script>
+
+<!-- Example usage to move an image to the archive -->
+<script>
+    addImageToSection("portfolio", "./images/clock_man.jpg", "Clock Man", "create a brand for a steampunk web developer");
+    addImageToSection("archive", "./images/clock_man.jpg", "Clock Man", "create a brand for a steampunk web developer");
+</script>
+
+

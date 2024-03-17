@@ -1,0 +1,21 @@
+<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="./images/hanging_out.jpg" class="image featured"><img src="images/hanging_out.jpg" alt="" /></a>
+								<h3><a href="./images/hanging_out.jpg">hanging out</a></h3>
+								<p>Prompt: Create a future guy hanging out.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="./images/robot_man.jpg" class="image featured"><img src="images/robot_man.jpg" alt="" /></a>
+								<h3><a href="./images/robot_man.jpg">Robot Man</a></h3>
+								<p>Prompt: Create a robot.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="./images/cool_gear.jpg" class="image featured"><img src="images/cool_gear.jpg" alt="" /></a>
+								<h3><a href="./images/cool_gear.jpg">Cool Gear</a></h3>
+								<p>Prompt: Create a brand for a steampunk web developer.</p>
+							</article>
+						</div>
