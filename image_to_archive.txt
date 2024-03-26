@@ -2,29 +2,29 @@
 <script>
     function addImageToSection(sectionId, imagePath, imageAlt, promptText) {
         // Create a new article element with the necessary structure
-        var newArticle = document.createElement("article");
+        let newArticle = document.createElement("article");
         newArticle.className = "box style2";
 
         // Create a link element with the image
-        var imageLink = document.createElement("a");
+        let imageLink = document.createElement("a");
         imageLink.href = imagePath;
         imageLink.className = "image featured";
 
-        var imageElement = document.createElement("img");
+        let imageElement = document.createElement("img");
         imageElement.src = imagePath;
         imageElement.alt = imageAlt;
 
         imageLink.appendChild(imageElement);
 
         // Create h3 element with a link to the image
-        var headingElement = document.createElement("h3");
-        var headingLink = document.createElement("a");
+        let headingElement = document.createElement("h3");
+        let headingLink = document.createElement("a");
         headingLink.href = imagePath;
         headingLink.textContent = imageAlt;
         headingElement.appendChild(headingLink);
 
         // Create a p element for the prompt text
-        var promptElement = document.createElement("p");
+        let promptElement = document.createElement("p");
         promptElement.textContent = "Prompt: " + promptText;
 
         // Append elements to the new article
@@ -33,7 +33,7 @@
         newArticle.appendChild(promptElement);
 
         // Find the specified section and append the new article
-        var targetSection = document.getElementById(sectionId);
+        let targetSection = document.getElementById(sectionId);
         targetSection.querySelector(".row").appendChild(newArticle);
     }
 
