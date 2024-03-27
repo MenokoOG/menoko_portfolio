@@ -1637,6 +1637,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		#jeff-img {
+			width: 80%;
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
